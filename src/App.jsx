@@ -1,34 +1,60 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+/* eslint-disable react/prop-types */
+
+import { useEffect } from 'react';
+import { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
+
+import { Homepage } from './pages/home/home';
+import { Footer } from './components/Footer';
+import { Navbar } from './components/navbar';
+
+
 
 function App() {
-  const [count, setCount] = useState(0)
+  
+const Loader = () => (
+<div id="spinner" className="fixed inset-0 flex items-center justify-center bg-white z-50">
+    <div className="animate-spin rounded-full border-t-2 border-b-2 border-[#FEA116] w-12 h-12" >
+        <span className="sr-only">Loading...</span>
+    </div>
+</div>
+  
+  
+  );
+  
+  const Layout = ({ children }) => {
+    const [isLoading, setIsLoading] = useState(true);
+    const location = useLocation();
+  
+    useEffect(() => {
+      setIsLoading(true); 
+      const delayLoader = setTimeout(() => {
+        setIsLoading(false);
+      }, 1000);
+  
+      return () => clearTimeout(delayLoader);
+    }, [location]);
+  
+    return isLoading ? <Loader /> : children;
+  };
 
   return (
-    <>
       <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      
+      <Router >
+
+      <Layout>
+        <Navbar />
+          <Routes>
+            <Route path='/'  element={<Homepage/>}/>
+        
+          </Routes>
+          </Layout>
+          <Footer  />
+        
+        </Router>
+        
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
   )
 }
 
