@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import { Homepage } from './pages/home/home';
 import { Footer } from './components/Footer';
 import { Navbar } from './components/navbar';
+import { Contact } from './pages/contact.jsx/contact';
 
 
 
@@ -47,6 +48,7 @@ const Loader = () => (
         <Navbar />
           <Routes>
             <Route path='/'  element={<Homepage/>}/>
+            <Route path='/contact'  element={<Contact/>}/>
         
           </Routes>
           </Layout>

@@ -23,17 +23,18 @@ export const Navbar = () => {
     };
 
     return (
-        <div className={`w-full flex items-center fixed top-0 z-50 p-4 lg:p-10 ${scrolled ? 'bg-gray-900' : 'bg-transparent'} ${menuOpen? 'bg-black w-full':''}`}>
+        <div className={`w-full flex items-center fixed top-0 z-50 p-4 lg:p-10 ${scrolled ? 'bg-black' : 'bg-transparent'} ${menuOpen? 'bg-black w-full':''}`}>
             <nav className="text-white w-full">
                 <div className="container mx-auto flex justify-between items-center">
                     <Link className="text-[1.3rem] font-extrabold uppercase lg:pl-8" to="/">Car<span className="text-[#01d28e]">Book</span></Link>
 
-                    <button className="lg:hidden border rounded p-2 text-gray-400 mr-4" onClick={toggleMenu}>
+                    <button className="lg:hidden border rounded p-2 text-gray-400 " onClick={toggleMenu}>
                         {menuOpen ? <FaTimes /> : <FaBars />}
                     </button>
 
-                    <div className={`lg:flex flex-grow justify-end pr-10 ${menuOpen ? 'block   ' : 'hidden'}`}>
-                        <ul className="flex space-x-12 text-[15px]">
+                    <div className={`absolute lg:relative lg:flex lg:items-center lg:w-auto bg-black lg:bg-transparent lg:pr-10 ${menuOpen ? "block" : "hidden"} lg:block w-full  top-14 lg:top-0 left-0`}>
+                    <ul className="flex flex-col lg:flex-row items-start lg:items-center gap-y-6  p-4  lg:p-0 md:ml-0 lg:space-x-12 font-semibold text-[15px]">
+
                             <li>
                                 <Link 
                                     to="/" 
