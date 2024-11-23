@@ -8,6 +8,7 @@ import { Homepage } from './pages/home/home';
 import { Footer } from './components/Footer';
 import { Navbar } from './components/navbar';
 import { Contact } from './pages/contact.jsx/contact';
+import { Service } from './pages/services/service';
 
 
 
@@ -49,6 +50,7 @@ const Loader = () => (
           <Routes>
             <Route path='/'  element={<Homepage/>}/>
             <Route path='/contact'  element={<Contact/>}/>
+            <Route path='/services'  element={<Service/>}/>
         
           </Routes>
           </Layout>
