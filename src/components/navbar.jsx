@@ -1,11 +1,10 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 export const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
-    const [activeLink, setActiveLink] = useState('/'); 
 
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
@@ -17,86 +16,81 @@ export const Navbar = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-    const handleLinkClick = (link) => {
-        setActiveLink(link); 
-        setMenuOpen(false); 
-    };
-
     return (
-        <div className={`w-full flex items-center fixed top-0 z-50 p-4 lg:p-10 ${scrolled ? 'bg-black' : 'bg-transparent'} ${menuOpen? 'bg-black w-full':''}`}>
+        <div className={`w-full flex items-center fixed top-0 z-50 p-4 lg:p-10 ${scrolled ? 'bg-black' : 'bg-transparent'} ${menuOpen ? 'bg-black w-full' : ''}`}>
             <nav className="text-white w-full">
                 <div className="container mx-auto flex justify-between items-center">
-                    <Link className="text-[1.3rem] font-extrabold uppercase lg:pl-8" to="/">Car<span className="text-[#01d28e]">Book</span></Link>
+                    <div className="text-[1.3rem] font-extrabold uppercase lg:pl-8" to="/">Car<span className="text-[#01d28e]">Book</span></div>
 
-                    <button className="lg:hidden border rounded p-2 text-gray-400 " onClick={toggleMenu}>
+                    <button className="lg:hidden border rounded p-2 text-gray-400" onClick={toggleMenu}>
                         {menuOpen ? <FaTimes /> : <FaBars />}
                     </button>
 
-                    <div className={`absolute lg:relative lg:flex lg:items-center lg:w-auto bg-black lg:bg-transparent lg:pr-10 ${menuOpen ? "block" : "hidden"} lg:block w-full  top-14 lg:top-0 left-0`}>
-                    <ul className="flex flex-col lg:flex-row items-start lg:items-center gap-y-6  p-4  lg:p-0 md:ml-0 lg:space-x-12 font-semibold text-[15px]">
-
+                    <div className={`absolute lg:relative lg:flex lg:items-center lg:w-auto bg-black lg:bg-transparent lg:pr-10 ${menuOpen ? "block" : "hidden"} lg:block w-full top-14 lg:top-0 left-0`}>
+                        <ul className="flex flex-col lg:flex-row items-start lg:items-center gap-y-6 p-4 lg:p-0 md:ml-0 lg:space-x-12 font-semibold text-[15px]">
                             <li>
-                                <Link 
+                                <NavLink 
                                     to="/" 
-                                    onClick={() => handleLinkClick('/')} 
-                                    className={`hover:text-[#01d28e] ${activeLink === '/' ? 'text-[#01d28e]' : 'text-white'}`}
+                                    onClick={() => setMenuOpen(false)} 
+                                    className={({ isActive }) => `hover:text-[#01d28e] ${isActive ? 'text-[#01d28e]' : 'text-white'}`}
                                 >
                                     Home
-                                </Link>
+                                </NavLink>
                             </li>
+                            
                             <li>
-                                <Link 
+                                <NavLink 
                                     to="/about" 
-                                    onClick={() => handleLinkClick('/about')} 
-                                    className={`hover:text-[#01d28e] ${activeLink === '/about' ? 'text-[#01d28e]' : 'text-white'}`}
+                                    onClick={() => setMenuOpen(false)} 
+                                    className={({ isActive }) => `hover:text-[#01d28e] ${isActive ? 'text-[#01d28e]' : 'text-white'}`}
                                 >
                                     About
-                                </Link>
+                                </NavLink>
                             </li>
                             <li>
-                                <Link 
+                                <NavLink 
                                     to="/services" 
-                                    onClick={() => handleLinkClick('/services')} 
-                                    className={`hover:text-[#01d28e] ${activeLink === '/services' ? 'text-[#01d28e]' : 'text-white'}`}
+                                    onClick={() => setMenuOpen(false)} 
+                                    className={({ isActive }) => `hover:text-[#01d28e] ${isActive ? 'text-[#01d28e]' : 'text-white'}`}
                                 >
                                     Services
-                                </Link>
+                                </NavLink>
                             </li>
                             <li>
-                                <Link 
+                                <NavLink 
                                     to="/pricing" 
-                                    onClick={() => handleLinkClick('/pricing')} 
-                                    className={`hover:text-[#01d28e] ${activeLink === '/pricing' ? 'text-[#01d28e]' : 'text-white'}`}
+                                    onClick={() => setMenuOpen(false)} 
+                                    className={({ isActive }) => `hover:text-[#01d28e] ${isActive ? 'text-[#01d28e]' : 'text-white'}`}
                                 >
                                     Pricing
-                                </Link>
+                                </NavLink>
                             </li>
                             <li>
-                                <Link 
+                                <NavLink 
                                     to="/cars" 
-                                    onClick={() => handleLinkClick('/cars')} 
-                                    className={`hover:text-[#01d28e] ${activeLink === '/cars' ? 'text-[#01d28e]' : 'text-white'}`}
+                                    onClick={() => setMenuOpen(false)} 
+                                    className={({ isActive }) => `hover:text-[#01d28e] ${isActive ? 'text-[#01d28e]' : 'text-white'}`}
                                 >
                                     Cars
-                                </Link>
+                                </NavLink>
                             </li>
                             <li>
-                                <Link 
+                                <NavLink 
                                     to="/blog" 
-                                    onClick={() => handleLinkClick('/blog')} 
-                                    className={`hover:text-[#01d28e] ${activeLink === '/blog' ? 'text-[#01d28e]' : 'text-white'}`}
+                                    onClick={() => setMenuOpen(false)} 
+                                    className={({ isActive }) => `hover:text-[#01d28e] ${isActive ? 'text-[#01d28e]' : 'text-white'}`}
                                 >
                                     Blog
-                                </Link>
+                                </NavLink>
                             </li>
                             <li>
-                                <Link 
+                                <NavLink 
                                     to="/contact" 
-                                    onClick={() => handleLinkClick('/contact')} 
-                                    className={`hover:text-[#01d28e] ${activeLink === '/contact' ? 'text-[#01d28e]' : 'text-white'}`}
+                                    onClick={() => setMenuOpen(false)} 
+                                    className={({ isActive }) => `hover:text-[#01d28e] ${isActive ? 'text-[#01d28e]' : 'text-white'}`}
                                 >
                                     Contact
-                                </Link>
+ </NavLink>
                             </li>
                         </ul>
                     </div>
