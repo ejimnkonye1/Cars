@@ -20,7 +20,7 @@ export const Navbar = () => {
         <div className={`w-full flex items-center fixed top-0 z-50 p-4 lg:p-10 ${scrolled ? 'bg-black' : 'bg-transparent'} ${menuOpen ? 'bg-black w-full' : ''}`}>
             <nav className="text-white w-full">
                 <div className="container mx-auto flex justify-between items-center">
-                    <div className="text-[1.3rem] font-extrabold uppercase lg:pl-8" to="/">Car<span className="text-[#01d28e]">Book</span></div>
+                    <div className="text-[1.3rem] font-extrabold uppercase lg:pl-8" >Car<span className="text-[#01d28e]">Book</span></div>
 
                     <button className="lg:hidden border rounded p-2 text-gray-400" onClick={toggleMenu}>
                         {menuOpen ? <FaTimes /> : <FaBars />}
