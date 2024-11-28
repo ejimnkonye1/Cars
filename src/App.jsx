@@ -12,6 +12,7 @@ import { Service } from './pages/services/service';
 import { Blog } from './pages/blog/blog';
 import { Cars } from './pages/cars/cars';
 import { Pricing } from './pages/pricing/pricing';
+import { About } from './pages/about/about';
 
 
 
@@ -57,6 +58,7 @@ const Loader = () => (
             <Route path='/cars'  element={<Cars/>}/>
             <Route path='/blog'  element={<Blog/>}/>
             <Route path='/pricing'  element={<Pricing/>}/>
+            <Route path='/about'  element={<About/>}/>
           </Routes>
           </Layout>
           <Footer  />
