@@ -67,11 +67,12 @@ Leasing
 
                                             </p>
                                         </td>
-                                        <td className="price  px-6 py-6 text-center relative bg-[#0000000D] group hover:bg-green-500">
-    <p className="btn-custom hidden group-hover:block bg-blue-500 text-white px-2 py-2 mx-auto text-center">
+                                        <td className="price px-6 py-6 text-center relative bg-[#0000000D] group hover:bg-green-500 transition-all duration-300 ease-in-out">
+    <p className="btn-custom hidden group-hover:block bg-blue-500 text-white px-2 py-2 mx-auto text-center transition-opacity duration-300 ease-in-out">
         <a href="#" className=''>Rent a car</a>
     </p>
-    <div className="price-rate p-4 group-hover:hidden ">
+  <div className='p-4'>
+  <div className="price-rate  group-hover:hidden transition-opacity duration-300 ease-in-out">
         <h3 className="text-xl mb-3">
             <span className="num relative text-xl text-blue-500">
                 <small className="currency">$</small> 10.99
@@ -80,74 +81,108 @@ Leasing
         </h3>
         <span className="subheading text-[15px] text-black">$3/hour fuel surcharges</span>
     </div>
+  </div>
 </td>
-                                        <td className="price px-4 py-2 text-center">
-                                            <p className="btn-custom"><a href="#" className="text-blue-500 underline">Rent a car</a></p>
-                                            <div className="price-rate">
-                                                <h3 className="text-xl">
-                                                    <span className="num"><small className="currency">$</small> 60.99</span>
-                                                    <span className="per">/per day</span>
-                                                </h3>
-                                                <span className="subheading text-gray-500">$3/hour fuel surcharges</span>
-                                            </div>
-                                        </td>
-                                        <td className="price px-4 py-2 text-center">
-                                            <p className="btn-custom"><a href="#" className="text-blue-500 underline">Rent a car</a></p>
-                                            <div className="price-rate">
-                                                <h3 className="text-xl">
-                                                    <span className="num"><small className="currency">$</small> 995.99</span>
-                                                    <span className="per">/per month</span>
-                                                </h3>
-                                                <span className="subheading text-gray-500">$3/hour fuel surcharges</span>
-                                            </div>
-                                        </td>
+
+<td className="price px-6 py-6 text-center relative bg-[#0000000D] group hover:bg-green-500 transition-all duration-300 ease-in-out">
+    <p className="btn-custom hidden group-hover:block bg-blue-500 text-white px-2 py-2 mx-auto text-center transition-opacity duration-300 ease-in-out">
+        <a href="#" className=''>Rent a car</a>
+    </p>
+  <div className='p-4'>
+  <div className="price-rate  group-hover:hidden transition-opacity duration-300 ease-in-out">
+        <h3 className="text-xl mb-3">
+            <span className="num relative text-xl text-blue-500">
+                <small className="currency">$</small> 10.99
+            </span>
+            <span className="per text-sm text-gray-400">/per hour</span>
+        </h3>
+        <span className="subheading text-[15px] text-black">$3/hour fuel surcharges</span>
+    </div>
+  </div>
+</td>
+<td className="price px-6 py-6 text-center relative bg-[#0000000D] group hover:bg-green-500 transition-all duration-300 ease-in-out">
+    <p className="btn-custom hidden group-hover:block bg-blue-500 text-white px-2 py-2 mx-auto text-center transition-opacity duration-300 ease-in-out">
+        <a href="#" className=''>Rent a car</a>
+    </p>
+  <div className='p-4'>
+  <div className="price-rate  group-hover:hidden transition-opacity duration-300 ease-in-out">
+        <h3 className="text-xl mb-3">
+            <span className="num relative text-xl text-blue-500">
+                <small className="currency">$</small> 10.99
+            </span>
+            <span className="per text-sm text-gray-400">/per hour</span>
+        </h3>
+        <span className="subheading text-[15px] text-black">$3/hour fuel surcharges</span>
+    </div>
+  </div>
+</td>
                                     </tr>
                                     {/* Car 2 */}
                                     <tr className="border-b">
                                         <td className="car-image">
-                                            <img src={car2} alt="Chevrolet SUV Car" className="h-32 w-32 object-cover" />
+                                            <img src={car2} alt="Chevrolet SUV Car" className="h-full w-[180px] object-cover" />
                                         </td>
-                                        <td className="product-name px-4 py-2">
-                                            <h3 className="text-lg font-semibold">Chevrolet SUV Car</h3>
-                                            <p className="mb-0 rated">
-                                                <span>rated:</span>
-                                                <span className="ion-ios-star"></span>
-                                                <span className="ion-ios-star"></span>
-                                                <span className="ion-ios-star"></span>
-                                                <span className="ion-ios-star"> </span>
-                                                <span className="ion-ios-star"></span>
+                                        <td className="product-name  flex flex-col items-center py-8 ">
+                                            <h3 className="text-gray-800 font-normal text-lg mb-2">Chevrolet SUV Car</h3>
+                                            <p className="mb-0 rated flex flex-row" >
+                                                <span className='font-poppins font-normal text-[15px]'>rated:</span>
+                                                <FaStar  className='text-[#01d28e] mt-1' />
+                                                <FaStar className='text-[#01d28e]  mt-1'  />
+                                                <FaStar className='text-[#01d28e]  mt-1' />
+                                                <FaStar className='text-[#01d28e]  mt-1' />
+                                                <FaStar className=' mt-1 text-gray-200' />
+
                                             </p>
                                         </td>
-                                        <td className="price px-4 py-2 text-center">
-                                            <p className="btn-custom"><a href="#" className="text-blue-500 underline">Rent a car</a></p>
-                                            <div className="price-rate">
-                                                <h3 className="text-xl">
-                                                    <span className="num"><small className="currency">$</small> 10.99</span>
-                                                    <span className="per">/per hour</span>
-                                                </h3>
-                                                <span className="subheading text-gray-500">$3/hour fuel surcharges</span>
-                                            </div>
-                                        </td>
-                                        <td className="price px-4 py-2 text-center">
-                                            <p className="btn-custom"><a href="#" className="text-blue-500 underline">Rent a car</a></p>
-                                            <div className="price-rate">
-                                                <h3 className="text-xl">
-                                                    <span className="num"><small className="currency">$</small> 60.99</span>
-                                                    <span className="per">/per day</span>
-                                                </h3>
-                                                <span className="subheading text-gray-500">$3/hour fuel surcharges</span>
-                                            </div>
-                                        </td>
-                                        <td className="price px-4 py-2 text-center">
-                                            <p className="btn-custom"><a href="#" className="text-blue-500 underline">Rent a car</a></p>
-                                            <div className="price-rate">
-                                                <h3 className="text-xl">
-                                                    <span className="num"><small className="currency">$</small> 995.99</span>
-                                                    <span className="per">/per month</span>
-                                                </h3>
-                                                <span className="subheading text-gray-500">$3/hour fuel surcharges</span>
-                                            </div>
-                                        </td>
+                                        <td className="price px-6 py-6 text-center relative bg-[#0000000D] group hover:bg-green-500 transition-all duration-300 ease-in-out">
+    <p className="btn-custom hidden group-hover:block bg-blue-500 text-white px-2 py-2 mx-auto text-center transition-opacity duration-300 ease-in-out">
+        <a href="#" className=''>Rent a car</a>
+    </p>
+  <div className=''>
+  <div className="price-rate  group-hover:hidden transition-opacity duration-300 ease-in-out">
+        <h3 className="text-xl mb-3">
+            <span className="num relative text-xl text-blue-500">
+                <small className="currency">$</small> 10.99
+            </span>
+            <span className="per text-sm text-gray-400">/per hour</span>
+        </h3>
+        <span className="subheading text-[15px] text-black">$3/hour fuel surcharges</span>
+    </div>
+  </div>
+</td>
+
+<td className="price px-6 py-6 text-center relative bg-[#0000000D] group hover:bg-green-500 transition-all duration-300 ease-in-out">
+    <p className="btn-custom hidden group-hover:block bg-blue-500 text-white px-2 py-2 mx-auto text-center transition-opacity duration-300 ease-in-out">
+        <a href="#" className=''>Rent a car</a>
+    </p>
+  <div className='p-4'>
+  <div className="price-rate  group-hover:hidden transition-opacity duration-300 ease-in-out">
+        <h3 className="text-xl mb-3">
+            <span className="num relative text-xl text-blue-500">
+                <small className="currency">$</small> 10.99
+            </span>
+            <span className="per text-sm text-gray-400">/per hour</span>
+        </h3>
+        <span className="subheading text-[15px] text-black">$3/hour fuel surcharges</span>
+    </div>
+  </div>
+</td>
+<td className="price px-6 py-6 text-center relative bg-[#0000000D] group hover:bg-green-500 transition-all duration-300 ease-in-out">
+    <p className="btn-custom hidden group-hover:block bg-blue-500 text-white px-2 py-2 mx-auto text-center transition-opacity duration-300 ease-in-out">
+        <a href="#" className=''>Rent a car</a>
+    </p>
+  <div className='p-4'>
+  <div className="price-rate  group-hover:hidden transition-opacity duration-300 ease-in-out">
+        <h3 className="text-xl mb-3">
+            <span className="num relative text-xl text-blue-500">
+                <small className="currency">$</small> 10.99
+            </span>
+            <span className="per text-sm text-gray-400">/per hour</span>
+        </h3>
+        <span className="subheading text-[15px] text-black">$3/hour fuel surcharges</span>
+    </div>
+  </div>
+</td>
                                     </tr>
                                     {/* Continue for other cars */}
                                 </tbody>
