@@ -64,8 +64,8 @@ export const Footer = () => {
                             <div className="mt-5">
                             <ul className="list-none ">
     <li className="flex items-start mb-4 leading-6">
-        <FaMapMarkerAlt size='25'  className="w-10 text-lg pt-1 text-white" />
-        <span className="block ml-2 pl-6 align-top text-gray-300">203 Fake St. Mountain View, San Francisco, California, USA</span>
+        <FaMapMarkerAlt size='25'  className="w-10 text-lg pt-1 lg:pr-0 pr-6 text-white" />
+        <span className="block ml-2 lg:pl-6 align-top text-gray-300">203 Fake St. Mountain View, San Francisco, California, USA</span>
     </li>
     <li className="flex items-start mb-4 leading-6">
         <FaPhoneAlt size='25'  className="w-10 text-lg pr-6 pt-1 text-white" />

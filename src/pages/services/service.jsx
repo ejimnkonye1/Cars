@@ -22,7 +22,7 @@ export const Service = () => {
             </div>
         </section>
         <section className="py-16">
-    <div className="container mx-auto pl-[100px] pr-[50px]">
+    <div className="container mx-auto lg:pl-[100px] lg:pr-[50px]">
         <div className="flex justify-center mb-10">
             <div className="md:w-1/2 text-center">
                 <span className="text-[#1089ff] uppercase text-[14px] font-nun leading-loose">Services</span>
@@ -81,11 +81,11 @@ export const Service = () => {
     className="relative  bg-cover bg-no-repeat bg-top bg-center overflow-hidden z-0 h-[380px]" 
     style={{ backgroundImage: `url(${bg})` }}
 >
-<div className="absolute top-[-120px] left-[-100px] right-0 bottom-[-120px] w-[40%] bg-[#01d28e] opacity-100 transform rotate-[20deg]"></div>
+<div className="absolute top-[-120px] left-[-100px] right-0 bottom-[-120px] w-[40%] lg:bg-[#01d28e] opacity-100 transform rotate-[20deg]"></div>
     <div className="container mx-auto relative z-10">
-        <div className="flex justify-end items-center pt-[100px] pl-[150px]">
+        <div className="flex flex-start lg:justify-end items-center pt-[100px] lg:pl-[150px]">
             <div className="md:w-1/2 text-white p-6">
-                <h2 className="mb-5 text-3xl font-bold leading-relaxed">Do You Want To Earn<br/> With Us? So Don&apos;t Be<br/> Late.</h2>
+                <h2 className="mb-5 text-3xl font-bold lg:leading-relaxed">Do You Want To Earn<br/> With Us? So Don&apos;t Be<br/> Late.</h2>
                 <a href="#" className="btn btn-primary btn-lg bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300">Become A Driver</a>
             </div>
         </div>
