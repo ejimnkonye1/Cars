@@ -1,5 +1,13 @@
 import bg from '../../images/bg_3.jpg'
-
+import blog1 from '../../images/image_1.jpg'
+import blog2 from '../../images/image_2.jpg'
+import blog3 from '../../images/image_3.jpg'
+import blog4 from '../../images/image_4.jpg'
+import blog5 from '../../images/image_5.jpg'
+import blog6 from '../../images/image_6.jpg'
+import { MdOutlineChat } from "react-icons/md"
+import { FaArrowRightLong } from "react-icons/fa6";
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 export const Blog = () => {
     return(
         <div className="">
@@ -23,148 +31,216 @@ export const Blog = () => {
         </section>
 
         <section className="ftco-section">
-            <div className="container mx-auto">
-                <div className="flex flex-col items-center">
+            <div className="container mx-auto pt-6">
+                <div className="flex flex-col items-center justify-center">
                     {/* Blog Entry 1 */}
-                    <div className="w-full mb-5">
-                        <div className="blog-entry flex flex-col md:flex-row justify-between">
-                            <a href="blog-single.html" className="block w-full md:w-1/3">
-                                <img src="images/image_1.jpg" alt="Blog 1" className="w-full h-48 object-cover rounded" />
-                            </a>
-                            <div className="text px-5 pt-4">
-                                <div className="meta mb-3">
-                                    <div><a href="#">Oct. 29, 2019</a></div>
-                                    <div><a href="#">Admin</a></div>
-                                    <div><a href="#" className="meta-chat"><span className="icon-chat"></span> 3</a></div>
-                                </div>
-                                <h3 className="heading mt-2">
-                                    <a href="#">Why Lead Generation is Key for Business Growth</a>
-                                </h3>
-                                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-                                <p><a href="blog-single.html" className="btn btn-primary bg-blue-500 text-white py-2 px-4 rounded">Continue <span className="icon-long-arrow-right"></span></a></p>
-                            </div>
-                        </div>
-                    </div>
+                    <div className="w-full mb-5 lg:p-20 p-4 ">
+    <div className="blog-entry flex flex-col  justify-center items-center">
+        <a href="blog-single.html" className="block w-full ">
+            <img src={blog1} alt="Blog 1" className="w-full h-[700px] object-cover rounded" />
+        </a>
+        <div className="text px-5 pt-4 flex justify-center flex-col text-center font-nun ">
+        <div className="meta mb-3 flex flex-row justify-center text-[#007bff] space-x-4">
+    <div><a href="#">Oct. 29, 2019</a></div>
+    <div><a href="#">Admin</a></div>
+    <div><a href="#" className="meta-chat flex items-center"><span className="icon-chat"><MdOutlineChat className='pr-2' size='24px' /></span> 3</a></div>
+</div>
+            <h3 className="heading mt-2 text-lg mb-4 font-medium font-nun font-semibold text-black">
+                <a href="#">Why Lead Generation is Key for Business Growth</a>
+            </h3>
+            <p className='text-[#999999] font-poppins mb-4'>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+            <p>
+                <div className='flex items-center justify-center'>
+            
+    <a href="blog-single.html" className=" bg-blue-500 text-white py-2 px-4 rounded flex items-center justify-center ">
+        Continue 
+        <FaArrowRightLong className="ml-2" />
+    </a>
+    </div>
+ 
+</p>
+        </div>
+    </div>
+</div>
 
                     {/* Blog Entry 2 */}
-                    <div className="w-full mb-5">
-                        <div className="blog-entry flex flex-col md:flex-row justify-between">
-                            <a href="blog-single.html" className="block w-full md:w-1/3">
-                                <img src="images/image_2.jpg" alt="Blog 2" className="w-full h-48 object-cover rounded" />
-                            </a>
-                            <div className="text px-5 pt-4">
-                                <div className="meta mb-3">
-                                    <div><a href="#">Oct. 29, 2019</a></div>
-                                    <div><a href="#">Admin</a></div>
-                                    <div><a href="#" className="meta-chat"><span className="icon-chat"></span> 3</a></div>
-                                </div>
-                                <h3 className="heading mt-2">
-                                    <a href="#">Why Lead Generation is Key for Business Growth</a>
-                                </h3>
-                                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-                                <p><a href="blog-single.html" className="btn btn-primary bg-blue-500 text-white py-2 px-4 rounded">Continue <span className="icon-long-arrow-right"></span></a></p>
-                            </div>
-                        </div>
-                    </div>
+                    <div className="w-full mb-5 lg:p-20 p-4 ">
+    <div className="blog-entry flex flex-col  justify-center items-center">
+        <a href="blog-single.html" className="block w-full ">
+            <img src={blog2} alt="Blog 1" className="w-full h-[700px] object-cover rounded" />
+        </a>
+        <div className="text px-5 pt-4 flex justify-center flex-col text-center font-nun ">
+        <div className="meta mb-3 flex flex-row justify-center text-[#007bff] space-x-4">
+    <div><a href="#">Oct. 29, 2019</a></div>
+    <div><a href="#">Admin</a></div>
+    <div><a href="#" className="meta-chat flex items-center"><span className="icon-chat"><MdOutlineChat className='pr-2' size='24px' /></span> 3</a></div>
+</div>
+            <h3 className="heading mt-2 text-lg mb-4 font-medium font-nun font-semibold text-black">
+                <a href="#">Why Lead Generation is Key for Business Growth</a>
+            </h3>
+            <p className='text-[#999999] font-poppins mb-4'>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+            <p>
+                <div className='flex items-center justify-center'>
+            
+    <a href="blog-single.html" className=" bg-blue-500 text-white py-2 px-4 rounded flex items-center justify-center ">
+        Continue 
+        <FaArrowRightLong className="ml-2" />
+    </a>
+    </div>
+ 
+</p>
+        </div>
+    </div>
+</div>
 
                     {/* Blog Entry 3 */}
-                    <div className="w-full mb-5">
-                        <div className="blog-entry flex flex-col md:flex-row justify-between">
-                            <a href="blog-single.html" className="block w-full md:w-1/3">
-                                <img src="images/image_3.jpg" alt="Blog 3" className="w-full h-48 object-cover rounded" />
-                            </a>
-                            <div className="text px-5 pt-4">
-                                <div className="meta mb-3">
-                                    <div><a href="#">Oct. 29, 2019</a></div>
-                                    <div><a href="#">Admin</a></div>
-                                    <div><a href="#" className="meta-chat"><span className="icon-chat"></span> 3</a></div>
-                                </div>
-                                <h3 className="heading mt-2">
-                                    <a href="#">Why Lead Generation is Key for Business Growth</a>
-                                </h3>
-                                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-                                <p><a href="blog-single.html" className="btn btn-primary bg-blue-500 text-white py-2 px-4 rounded">Continue <span className="icon-long-arrow-right"></span></a></p>
-                            </div>
-                        </div>
-                    </div>
+                    <div className="w-full mb-5 lg:p-20 p-4 ">
+    <div className="blog-entry flex flex-col  justify-center items-center">
+        <a href="blog-single.html" className="block w-full ">
+            <img src={blog3} alt="Blog 1" className="w-full h-[700px] object-cover rounded" />
+        </a>
+        <div className="text px-5 pt-4 flex justify-center flex-col text-center font-nun ">
+        <div className="meta mb-3 flex flex-row justify-center text-[#007bff] space-x-4">
+    <div><a href="#">Oct. 29, 2019</a></div>
+    <div><a href="#">Admin</a></div>
+    <div><a href="#" className="meta-chat flex items-center"><span className="icon-chat"><MdOutlineChat className='pr-2' size='24px' /></span> 3</a></div>
+</div>
+            <h3 className="heading mt-2 text-lg mb-4 font-medium font-nun font-semibold text-black">
+                <a href="#">Why Lead Generation is Key for Business Growth</a>
+            </h3>
+            <p className='text-[#999999] font-poppins mb-4'>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+            <p>
+                <div className='flex items-center justify-center'>
+            
+    <a href="blog-single.html" className=" bg-blue-500 text-white py-2 px-4 rounded flex items-center justify-center ">
+        Continue 
+        <FaArrowRightLong className="ml-2" />
+    </a>
+    </div>
+ 
+</p>
+        </div>
+    </div>
+</div>
 
-                    {/* Blog Entry 4 */}
-                    <div className="w-full mb-5">
-                        <div className="blog-entry flex flex-col md:flex-row justify-between">
-                            <a href="blog-single.html" className="block w-full md:w-1/3">
-                                <img src="images/image_4.jpg" alt="Blog 4" className="w-full h-48 object-cover rounded" />
-                            </a>
-                            <div className="text px-5 pt-4">
-                                <div className="meta mb-3">
-                                    <div><a href="#">Oct. 29, 2019</a></div>
-                                    <div><a href="#">Admin</a></div>
-                                    <div><a href="#" className="meta-chat"><span className="icon-chat"></span> 3</a></div>
-                                </div>
-                                <h3 className="heading mt-2">
-                                    <a href="#">Why Lead Generation is Key for Business Growth</a>
-                                </h3>
-                                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-                                <p><a href="blog-single.html" className="btn btn-primary bg-blue-500 text-white py-2 px-4 rounded">Continue <span className="icon-long-arrow-right"></span></a></p>
-                            </div>
-                        </div>
-                    </div>
+<div className="w-full mb-5 lg:p-20 p-4 ">
+    <div className="blog-entry flex flex-col  justify-center items-center">
+        <a href="blog-single.html" className="block w-full ">
+            <img src={blog4} alt="Blog 1" className="w-full h-[700px] object-cover rounded" />
+        </a>
+        <div className="text px-5 pt-4 flex justify-center flex-col text-center font-nun ">
+        <div className="meta mb-3 flex flex-row justify-center text-[#007bff] space-x-4">
+    <div><a href="#">Oct. 29, 2019</a></div>
+    <div><a href="#">Admin</a></div>
+    <div><a href="#" className="meta-chat flex items-center"><span className="icon-chat"><MdOutlineChat className='pr-2' size='24px' /></span> 3</a></div>
+</div>
+            <h3 className="heading mt-2 text-lg mb-4 font-medium font-nun font-semibold text-black">
+                <a href="#">Why Lead Generation is Key for Business Growth</a>
+            </h3>
+            <p className='text-[#999999] font-poppins mb-4'>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+            <p>
+                <div className='flex items-center justify-center'>
+            
+    <a href="blog-single.html" className=" bg-blue-500 text-white py-2 px-4 rounded flex items-center justify-center ">
+        Continue 
+        <FaArrowRightLong className="ml-2" />
+    </a>
+    </div>
+ 
+</p>
+        </div>
+    </div>
+</div>
 
-                    {/* Blog Entry 5 */}
-                    <div className="w-full mb-5">
-                        <div className="blog-entry flex flex-col md:flex-row justify-between">
-                            <a href="blog-single.html" className="block w-full md:w-1/3">
-                                <img src="images/image_5.jpg" alt="Blog 5" className="w-full h-48 object-cover rounded" />
-                            </a>
-                            <div className="text px-5 pt-4">
-                                <div className="meta mb-3">
-                                    <div><a href="#">Oct. 29, 2019</a></div>
-                                    <div><a href="#">Admin</a></div>
-                                    <div><a href="#" className="meta-chat"><span className="icon-chat"></span> 3</a></div>
-                                </div>
-                                <h3 className="heading mt-2">
-                                    <a href="#">Why Lead Generation is Key for Business Growth</a>
-                                </h3>
-                                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-                                <p><a href="blog-single.html" className="btn btn-primary bg-blue-500 text-white py-2 px-4 rounded">Continue <span className="icon-long-arrow-right"></span></a></p>
-                            </div>
-                        </div>
-                    </div>
+<div className="w-full mb-5 lg:p-20 p-4 ">
+    <div className="blog-entry flex flex-col  justify-center items-center">
+        <a href="blog-single.html" className="block w-full ">
+            <img src={blog5} alt="Blog 1" className="w-full h-[700px] object-cover rounded" />
+        </a>
+        <div className="text px-5 pt-4 flex justify-center flex-col text-center font-nun ">
+        <div className="meta mb-3 flex flex-row justify-center text-[#007bff] space-x-4">
+    <div><a href="#">Oct. 29, 2019</a></div>
+    <div><a href="#">Admin</a></div>
+    <div><a href="#" className="meta-chat flex items-center"><span className="icon-chat"><MdOutlineChat className='pr-2' size='24px' /></span> 3</a></div>
+</div>
+            <h3 className="heading mt-2 text-lg mb-4 font-medium font-nun font-semibold text-black">
+                <a href="#">Why Lead Generation is Key for Business Growth</a>
+            </h3>
+            <p className='text-[#999999] font-poppins mb-4'>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+            <p>
+                <div className='flex items-center justify-center'>
+            
+    <a href="blog-single.html" className=" bg-blue-500 text-white py-2 px-4 rounded flex items-center justify-center ">
+        Continue 
+        <FaArrowRightLong className="ml-2" />
+    </a>
+    </div>
+ 
+</p>
+        </div>
+    </div>
+</div>
 
-                    {/* Blog Entry 6 */}
-                    <div className="w-full mb-5">
-                        <div className="blog-entry flex flex-col md:flex-row justify-between">
-                            <a href="blog-single.html" className="block w-full md:w-1/3">
-                                <img src="images/image_6.jpg" alt="Blog 6" className="w-full h-48 object-cover rounded" />
-                            </a>
-                            <div className="text px-5 pt-4">
-                                <div className="meta mb-3">
-                                    <div><a href="#">Oct. 29, 2019</a></div>
-                                    <div><a href="#">Admin</a></div>
-                                    <div><a href="#" className="meta-chat"><span className="icon-chat"></span> 3</a></div>
-                                </div>
-                                <h3 className="heading mt-2">
-                                    <a href="#">Why Lead Generation is Key for Business Growth</a>
-                                </h3>
-                                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-                                <p><a href="blog-single.html" className="btn btn-primary bg-blue-500 text-white py-2 px-4 rounded">Continue <span className="icon-long-arrow-right"></span></a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div> <div className="row mt-5">
-                    <div className="col text-center">
-                        <div className="block-27">
-                            <ul className="flex justify-center">
-                                <li><a href="#">&lt;</a></li>
-                                <li className="active"><span>1</span></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a href="#">4</a></li>
-                                <li><a href="#">5</a></li>
-                                <li><a href="#">&gt;</a></li>
-                            </ul>
-                        </div>
-                    </div>
+<div className="w-full mb-5 lg:p-20 p-4 ">
+    <div className="blog-entry flex flex-col  justify-center items-center">
+        <a href="blog-single.html" className="block w-full ">
+            <img src={blog6} alt="Blog 1" className="w-full h-[700px] object-cover rounded" />
+        </a>
+        <div className="text px-5 pt-4 flex justify-center flex-col text-center font-nun ">
+        <div className="meta mb-3 flex flex-row justify-center text-[#007bff] space-x-4">
+    <div><a href="#">Oct. 29, 2019</a></div>
+    <div><a href="#">Admin</a></div>
+    <div><a href="#" className="meta-chat flex items-center"><span className="icon-chat"><MdOutlineChat className='pr-2' size='24px' /></span> 3</a></div>
+</div>
+            <h3 className="heading mt-2 text-lg mb-4 font-medium font-nun font-semibold text-black">
+                <a href="#">Why Lead Generation is Key for Business Growth</a>
+            </h3>
+            <p className='text-[#999999] font-poppins mb-4'>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+            <p>
+                <div className='flex items-center justify-center'>
+            
+    <a href="blog-single.html" className=" bg-blue-500 text-white py-2 px-4 rounded flex items-center justify-center ">
+        Continue 
+        <FaArrowRightLong className="ml-2" />
+    </a>
+    </div>
+ 
+</p>
+        </div>
+    </div>
+</div>
                 </div>
+                <div className="flex justify-center mb-10">
+            <nav aria-label="Pagination">
+                <ul className="flex items-center space-x-1">
+                    <li className="inline-block mb-1 font-normal">
+                        <a href="#" className="inline-flex items-center justify-center text-[#1089ff] border border-[#e6e6e6] rounded-full w-10 h-10 leading-[40px] hover:bg-[#e6e6e6]" aria-label="Previous">
+                            <FaChevronLeft />
+                        </a>
+                    </li>
+                    <li className="inline-block mb-1 font-normal">
+                        <a href="#" className="inline-flex items-center justify-center text-white border border-[#e6e6e6] bg-[#1089ff] rounded-full w-10 h-10 leading-[40px] hover:bg-[#e6e6e6]">1</a>
+                    </li>
+                    <li className="inline-block mb-1 font-normal">
+                        <a href="#" className="inline-flex items-center justify-center text-[#1089ff] border border-[#e6e6e6] rounded-full w-10 h-10 leading-[40px] hover:bg-[#e6e6e6]">2</a>
+                    </li>
+                    <li className="inline-block mb-1 font-normal">
+                        <a href="#" className="inline-flex items-center justify-center text-[#1089ff] border border-[#e6e6e6] rounded-full w-10 h-10 leading-[40px] hover:bg-[#e6e6e6]">3</a>
+                    </li>
+                    <li className="inline-block mb-1 font-normal">
+                        <a href="#" className="inline-flex items-center justify-center text-[#1089ff] border border-[#e6e6e6] rounded-full w-10 h-10 leading-[40px] hover:bg-[#e6e6e6]">4</a>
+                    </li>
+                    <li className="inline-block mb-1 font-normal">
+                        <a href="#" className="inline-flex items-center justify-center text-[#1089ff] border border-[#e6e6e6] rounded-full w-10 h-10 leading-[40px] hover:bg-[#e6e6e6]">5</a>
+                    </li>
+                    <li className="inline-block mb-1 font-normal">
+                        <a href="#" className="inline-flex items-center justify-center text-[#1089ff] border border-[#e6e6e6] rounded-full w-10 h-10 leading-[40px] hover:bg-[#e6e6e6]" aria-label="Next">
+                            <FaChevronRight />
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
             </div>
         </section>
    
