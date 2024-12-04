@@ -1,6 +1,6 @@
 import bg from '../../images/bg_1.jpg';
 import { FaPlay } from "react-icons/fa6";
-
+import { Testimonial } from '../../components/testimonial'
 export const Homepage = () => {
     return (
         <div>
@@ -105,6 +105,7 @@ export const Homepage = () => {
         </div>
     </div>
 </section>
+<Testimonial />
         </div>
     );
 };

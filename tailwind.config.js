@@ -5,15 +5,7 @@ export default {
   ],
   theme: {
     extend: {
-      keyframes: {
-        rotate: {
-          '0%': {transform: 'rotate(0deg)'},
-          '100%': {transform: 'rotate(360deg)'},
-        },
-      },
-      animation: {
-        'spin-slow': 'rotate 20s linear infinite'
-      },
+    
       fontFamily:{
         sans : ['Segoe UI', 'Helvetica'],
         poppins: ['Poppins', 'sans-serif'],
@@ -27,9 +19,7 @@ export default {
         'query': 'calc(1.375rem + 1.5vw)',
          'hero': 'calc(1.525rem + 3.3vw)'
       },
-      boxShadow: {
-        'light': '0 0 45px rgba(0, 0, 0, 0.08)', 
-      },
+     
 
     },
   },
