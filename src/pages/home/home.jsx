@@ -1,6 +1,7 @@
 import bg from '../../images/bg_1.jpg';
 import { FaPlay } from "react-icons/fa6";
 import { Testimonial } from '../../components/testimonial'
+import { Experience } from '../../components/experience'
 export const Homepage = () => {
     return (
         <div>
@@ -29,7 +30,7 @@ export const Homepage = () => {
     <div className="container mx-auto">
         <div className="flex flex-wrap -mx-2">
             <div className="w-full featured-top">
-                <div className="flex flex-wrap -mx-2">
+                <div className="flex flex-wrap mx-2">
                     <div className="w-full md:w-1/3 px-2 d-flex align-items-center">
                         <form action="#" className="request-form ftco-animate bg-primary p-6 rounded-lg">
                             <h2 className="text-white text-xl mb-4">Make your trip</h2>
@@ -106,6 +107,7 @@ export const Homepage = () => {
     </div>
 </section>
 <Testimonial />
+<Experience />
         </div>
     );
 };
