@@ -94,6 +94,7 @@ export const Testimonial = () => {
           ))}
         </Carousel>
       </div>
+      
     </section>
   );
 };

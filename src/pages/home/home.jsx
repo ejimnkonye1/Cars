@@ -2,6 +2,10 @@ import bg from '../../images/bg_1.jpg';
 import { FaPlay } from "react-icons/fa6";
 import { Testimonial } from '../../components/testimonial'
 import { Experience } from '../../components/experience'
+import { Abt } from '../../components/abt';
+import { Ser } from '../../components/ser';
+import { Services } from '../../components/service';
+import { Car2 } from '../../components/car2';
 export const Homepage = () => {
     return (
         <div>
@@ -106,6 +110,10 @@ export const Homepage = () => {
         </div>
     </div>
 </section>
+<Car2 />
+<Abt />
+<Services />
+<Ser />
 <Testimonial />
 <Experience />
         </div>
