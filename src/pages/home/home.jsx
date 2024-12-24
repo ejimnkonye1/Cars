@@ -31,7 +31,7 @@ export const Homepage = () => {
             </div>
             
         </div>
-        <section className="ftco-section ftco-no-pt bg-light">
+        {/* <section className="ftco-section ftco-no-pt bg-light">
     <div className="container mx-auto">
         <div className="flex flex-wrap -mx-2">
             <div className="w-full featured-top">
@@ -110,7 +110,7 @@ export const Homepage = () => {
             </div>
         </div>
     </div>
-</section>
+</section> */}
 <Car2 />
 <Abt />
 <Services />
